@@ -5,4 +5,5 @@ package com.niyati.solidprinciples.lsp;
  * and the code should work fine.
  * Something unintended should not pop in subclass.
  * Should not design the code in subclass which breaks the existence functionality.
+ *
  */
