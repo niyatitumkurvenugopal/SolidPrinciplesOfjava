@@ -7,7 +7,6 @@ public class CalculateTotalMarks {
         this.student = student;
     }
     int totalMarks(){
-        int total=student.getScienceMarks()+ student.getMathsMarks();
-        return  total;
+        return  student.getScienceMarks()+ student.getMathsMarks();
     }
 }
