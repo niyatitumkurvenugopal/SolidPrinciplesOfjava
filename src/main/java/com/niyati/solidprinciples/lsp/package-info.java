@@ -6,4 +6,6 @@ package com.niyati.solidprinciples.lsp;
  * Something unintended should not pop in subclass.
  * Should not design the code in subclass which breaks the existence functionality.
  *
+ * Derived types must be completely substitutable for their base types.
+ *
  */
