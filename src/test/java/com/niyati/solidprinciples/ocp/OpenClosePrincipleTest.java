@@ -2,21 +2,21 @@ package com.niyati.solidprinciples.ocp;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OpenClosePrincipleTest {
 
     @Test
-    void testOpenClosePrinciple(){
-        Operations operations1=new Operations(new AddOperation());
-        assertEquals(10,operations1.executeOperation(3,7));
+    void testOpenClosePrinciple() {
 
-        Operations operations2=new Operations(new SubtractOperation());
-        assertEquals(6,operations2.executeOperation(8,2));
+        ArithmeticOperations operations1 = new AddOperation();
+        assertEquals(10, operations1.doOperation(3, 7));
 
-        Operations operations3=new Operations(new MultiplyOperation());
-        assertEquals(75,operations3.executeOperation(15,5));
+        ArithmeticOperations operations2 = new SubtractOperation();
+        assertEquals(-4, operations2.doOperation(3, 7));
 
+        ArithmeticOperations operations3 = new MultiplyOperation();
+        assertEquals(21, operations3.doOperation(3, 7));
 
     }
 
